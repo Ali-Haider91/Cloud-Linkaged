@@ -1,7 +1,10 @@
 import React from 'react'
+import Login from './login'
 
-export const recruiter = () => {
+const recruiter = () => {
   return (
-    <div>recruiter</div>
+    <div>recruiter<Login/></div>
   )
 }
+
+export default recruiter

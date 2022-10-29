@@ -1,8 +1,10 @@
 import React from 'react'
 import Login from './login'
 
-export const student = () => {
+const student = () => {
   return (
-    <div><Login/></div>
+    <div>student<Login/></div>
   )
 }
+
+export default student

@@ -1,31 +1,5 @@
 import React from "react";
-import { Box, TextField, Typography, Button, ButtonGroup, styled} from "@mui/material";
-
-const outerBox = styled(Box)`
-  color: #20b2aa;
-
-  :hover {
-    color: #2e8b57;
-  }
-
-  & .MuiSlider-thumb {
-    border-radius: 1px;
-  }
-`;
-
-const innerBox = styled(Box)`
-  color: #20b2aa;
-
-  :hover {
-    color: #2e8b57;
-  }
-
-  & .MuiSlider-thumb {
-    border-radius: 1px;
-  }
-`;
-
-
+import { Box, TextField, Typography, Button, ButtonGroup } from "@mui/material";
 
 const login = () => {
   return (
@@ -38,7 +12,7 @@ const login = () => {
           sx={{
             width: 700,
             height: 500,
-            backgroundColor: '#8c99a6',
+            backgroundColor: '#CCD6DD',
           }}>
           <Box
             display="flex"
