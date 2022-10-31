@@ -1,5 +1,10 @@
 import React from "react";
 import { Box, TextField, Typography, Button, ButtonGroup } from "@mui/material";
+import InputAdornment from '@mui/material/InputAdornment';
+import EmailIcon from '@mui/icons-material/Email';
+import KeyIcon from '@mui/icons-material/Key';
+
+
 
 const login = () => {
   return (
@@ -30,12 +35,12 @@ const login = () => {
               variant="h6"
               padding={3}
               // marginBottom={}
-              fontFamily="arial Black">
+              fontFamily="arial Black"
+              Color={'#0e2f44'}>
               Login
             </Typography>
             <ButtonGroup
               variant="contained"
-              aria-label="Secendary button group"
               >
               <Button sx={{
                 backgroundColor:'#1F4068',
@@ -59,7 +64,8 @@ const login = () => {
             <Typography
               variant="h5"
               padding={3}
-              fontFamily="arial Black">
+              fontFamily="arial Black"
+              Color={'#0e2f44'}>
               Welcome Back!
             </Typography>
             <TextField
@@ -68,6 +74,13 @@ const login = () => {
               type="email"
               placeholder="Enter your email"
               sx={{ width: 300, }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <EmailIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
             <TextField
               variant="filled"
@@ -76,6 +89,13 @@ const login = () => {
               placeholder="Enter your password"
               margin="normal"
               sx={{ width: 300 }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <KeyIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
             <Button
               variant="contained"

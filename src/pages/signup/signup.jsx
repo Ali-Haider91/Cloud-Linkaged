@@ -1,5 +1,17 @@
 import React from 'react'
-import { Box, TextField, Typography, Button } from "@mui/material";
+import { Box, TextField, Typography, Button, Divider } from "@mui/material";
+import InputAdornment from '@mui/material/InputAdornment';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import BusinessSharpIcon from '@mui/icons-material/BusinessSharp';
+import EmailIcon from '@mui/icons-material/Email';
+import DescriptionIcon from '@mui/icons-material/Description';
+import PhoneIcon from '@mui/icons-material/Phone';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LanguageIcon from '@mui/icons-material/Language';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+
 const signup = () => {
   return (
     <div>
@@ -9,51 +21,183 @@ const signup = () => {
           margin="auto"
           marginTop={5}
           sx={{
-            width: 700,
-            height: 900,
+            width: 850,
+            height: 1000,
             backgroundColor: '#CCD6DD',
           }}>
           <Box
             display="flex"
             flexDirection={"column"}
-            alignItems="center"
-            justifyContent={"center"}
             margin="auto"
             padding={4}
             borderRadius={4}
             backgroundColor="#ffff"
             sx={{
-              height:750,
-              width: 550,
+              height:850,
+              width: 700,
             }}>
             <Typography
-              variant="h6"
-              padding={3}
-              // marginBottom={}
-              fontFamily="arial Black">
-              Login
+              variant="h5"
+              fontFamily="arial Black"
+              color={'#1F4068'}>
+              Recruiter Signup
             </Typography>
             <Typography
-              variant="h5"
-              padding={3}
-              fontFamily="arial Black">
-              Welcome Back!
+              variant="h6"
+              paddingBottom={2}
+              // padding={1}
+              fontSize={13}>
+              Enter your Relevent details to get registered!
             </Typography>
+            <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              placeholder="Your Name"
+              margin='normal'
+              sx={{ width: 350,
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <AccountCircleIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              placeholder="Your Job role"
+              margin='normal'
+              sx={{ width: 350,
+                
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <ContactPageIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              margin='normal'
+              placeholder=" Organization Name"
+              sx={{ width: 350,
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <BusinessSharpIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <TextField
+              variant="filled"
+              multiline
+              type="name"
+              margin='normal'
+              rows={4}
+              placeholder="Describe your Organization"
+              sx={{ width: 350,
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <DescriptionIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
             <TextField
               variant="filled"
               size="small"
               type="email"
-              placeholder="Enter your email"
-              sx={{ width: 300, }}
+              placeholder=" Email address"
+              margin='normal'
+              sx={{ width: 350,
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <EmailIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
             <TextField
               variant="filled"
               size="small"
-              type="password"
-              placeholder="Enter your password"
-              margin="normal"
-              sx={{ width: 300 }}
+              type="number"
+              placeholder=" Company Phone number"
+              margin='normal'
+              sx={{ width: 350,
+               }}
+              InputProps={{
+               startAdornment: (
+                 <InputAdornment position="start">
+                   <PhoneIcon/>
+                 </InputAdornment>
+               ),
+             }}
+             
             />
+            <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              placeholder=" Company website link"
+              margin='normal'
+              sx={{ width: 350, 
+               }}
+               InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <LanguageIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+             <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              placeholder=" Linkedin profile link"
+              margin='normal'
+              sx={{ width: 350,
+                 }}
+                 InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <LinkedInIcon />
+                    </InputAdornment>
+                  ),
+                }}
+            />
+             <TextField
+              variant="filled"
+              size="small"
+              type="name"
+              placeholder=" Complete Company address"
+              margin='normal'
+              sx={{ width: 350,
+                 }}
+                 InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <LocationOnIcon />
+                    </InputAdornment>
+                  ),
+                }}
+            />
+             
+            
             <Button
               variant="contained"
               sx={{
@@ -68,7 +212,9 @@ const signup = () => {
           </Box>
         </Box>
       </form>
+      <Divider orientation="vertical" flexItem />
     </div>
+    
   )
 }
 
