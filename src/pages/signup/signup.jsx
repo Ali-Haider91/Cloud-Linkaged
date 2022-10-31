@@ -21,8 +21,8 @@ const signup = () => {
           margin="auto"
           marginTop={5}
           sx={{
-            width: 850,
-            height: 1000,
+            width: 900,
+            height: 1100,
             backgroundColor: '#CCD6DD',
           }}>
           <Box
@@ -33,8 +33,8 @@ const signup = () => {
             borderRadius={4}
             backgroundColor="#ffff"
             sx={{
-              height:850,
-              width: 700,
+              height: 950,
+              width: 750,
             }}>
             <Typography
               variant="h5"
@@ -55,9 +55,10 @@ const signup = () => {
               type="name"
               placeholder="Your Name"
               margin='normal'
-              sx={{ width: 350,
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <AccountCircleIcon />
@@ -71,10 +72,11 @@ const signup = () => {
               type="name"
               placeholder="Your Job role"
               margin='normal'
-              sx={{ width: 350,
-                
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <ContactPageIcon />
@@ -88,9 +90,10 @@ const signup = () => {
               type="name"
               margin='normal'
               placeholder=" Organization Name"
-              sx={{ width: 350,
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <BusinessSharpIcon />
@@ -105,9 +108,10 @@ const signup = () => {
               margin='normal'
               rows={4}
               placeholder="Describe your Organization"
-              sx={{ width: 350,
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <DescriptionIcon />
@@ -121,9 +125,10 @@ const signup = () => {
               type="email"
               placeholder=" Email address"
               margin='normal'
-              sx={{ width: 350,
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <EmailIcon />
@@ -137,16 +142,17 @@ const signup = () => {
               type="number"
               placeholder=" Company Phone number"
               margin='normal'
-              sx={{ width: 350,
-               }}
+              sx={{
+                width: 350,
+              }}
               InputProps={{
-               startAdornment: (
-                 <InputAdornment position="start">
-                   <PhoneIcon/>
-                 </InputAdornment>
-               ),
-             }}
-             
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <PhoneIcon />
+                  </InputAdornment>
+                ),
+              }}
+
             />
             <TextField
               variant="filled"
@@ -154,9 +160,10 @@ const signup = () => {
               type="name"
               placeholder=" Company website link"
               margin='normal'
-              sx={{ width: 350, 
-               }}
-               InputProps={{
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
                     <LanguageIcon />
@@ -164,44 +171,57 @@ const signup = () => {
                 ),
               }}
             />
-             <TextField
+            <TextField
               variant="filled"
               size="small"
               type="name"
               placeholder=" Linkedin profile link"
               margin='normal'
-              sx={{ width: 350,
-                 }}
-                 InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <LinkedInIcon />
-                    </InputAdornment>
-                  ),
-                }}
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <LinkedInIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
-             <TextField
+            <TextField
               variant="filled"
               size="small"
               type="name"
               placeholder=" Complete Company address"
               margin='normal'
-              sx={{ width: 350,
-                 }}
-                 InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <LocationOnIcon />
-                    </InputAdornment>
-                  ),
-                }}
+              sx={{
+                width: 350,
+              }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <LocationOnIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
-             
-            
+            <Button
+              variant="contained"
+              component="label"
+            >
+              Upload File
+              <input
+                type="file"
+                hidden
+              />
+            </Button>
+
+
             <Button
               variant="contained"
               sx={{
                 marginTop: 2,
+                // margin:,
                 borderRadius: 5,
                 width: 100,
                 textTransform: 'none',
@@ -209,12 +229,11 @@ const signup = () => {
               }}>
               Login
             </Button>
+            <Divider orientation="vertical" variant="middle" flexItem />
           </Box>
         </Box>
       </form>
-      <Divider orientation="vertical" flexItem />
     </div>
-    
   )
 }
 
