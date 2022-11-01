@@ -30,13 +30,13 @@ const login = () => {
             backgroundColor="#ffff"
             sx={{
               width: 550,
+              height:370
             }}>
             <Typography
               variant="h6"
               padding={3}
-              // marginBottom={}
               fontFamily="arial Black"
-              Color={'#0e2f44'}>
+              color={'#1F4068'}>
               Login
             </Typography>
             <ButtonGroup
@@ -65,11 +65,12 @@ const login = () => {
               variant="h5"
               padding={3}
               fontFamily="arial Black"
-              Color={'#0e2f44'}>
+              color={'#1F4068'}>
               Welcome Back!
             </Typography>
             <TextField
               variant="filled"
+              helperText="Eg:Se19-012@ssuet.edu.pk"
               size="small"
               type="email"
               placeholder="Enter your email"
