@@ -17,21 +17,21 @@ const signup = () => {
     <div>
       <form>
         <Box
-          display="flex"
-          margin="auto"
-          marginTop={5}
+         display="flex"
+         margin="auto"
           sx={{
-            width: 900,
+            
             height: 1100,
-            backgroundColor: '#CCD6DD',
+            backgroundColor: '#bcbcbc',
+            position: 'cover',
           }}>
           <Box
-            display="flex"
-            flexDirection={"column"}
-            margin="auto"
-            padding={4}
-            borderRadius={4}
-            backgroundColor="#ffff"
+              display="flex"
+              flexDirection={"column"}
+              margin="auto"
+              padding={4}
+              borderRadius={4}
+              backgroundColor="#ffff"
             sx={{
               height: 950,
               width: 750,

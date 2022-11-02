@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, TextField, Typography, Button, ButtonGroup } from "@mui/material";
+import { Box, TextField, Typography, Button, ButtonGroup, } from "@mui/material";
 import InputAdornment from '@mui/material/InputAdornment';
 import EmailIcon from '@mui/icons-material/Email';
 import KeyIcon from '@mui/icons-material/Key';
@@ -9,15 +9,15 @@ import KeyIcon from '@mui/icons-material/Key';
 const login = () => {
   return (
     <div>
+      
       <form>
         <Box
           display="flex"
           margin="auto"
-          marginTop={12}
           sx={{
-            width: 700,
-            height: 500,
-            backgroundColor: '#CCD6DD',
+            height: 710,
+            backgroundColor: '#bcbcbc',
+            position:'cover'
           }}>
           <Box
             display="flex"
@@ -25,15 +25,21 @@ const login = () => {
             alignItems="center"
             justifyContent={"center"}
             margin="auto"
-            padding={4}
+            // padding={4}
             borderRadius={4}
             backgroundColor="#ffff"
             sx={{
-              width: 550,
-              height:370
+              width: 800,
+              height: 550,
+              position: 'cover',
             }}>
+              
+              <img 
+              src="https://res.cloudinary.com/db2avaxdx/image/upload/v1667304122/remove_background_acmnri.png" alt="logo"
+              />
+              
             <Typography
-              variant="h6"
+              variant="h5"
               padding={3}
               fontFamily="arial Black"
               color={'#1F4068'}>
@@ -41,25 +47,25 @@ const login = () => {
             </Typography>
             <ButtonGroup
               variant="contained"
-              >
+            >
               <Button sx={{
-                backgroundColor:'#1F4068',
+                backgroundColor: '#1F4068',
                 textTransform: 'none',
-                fontSize:'14px'
+                fontSize: '16px'
               }}>
-              Login as Student</Button>
+                Login as Student</Button>
               <Button
-              sx={{
-                backgroundColor:'#1F4068',
-                textTransform: 'none',
-                fontSize:'14px'
-              }}>Login as Teacher</Button>
+                sx={{
+                  backgroundColor: '#1F4068',
+                  textTransform: 'none',
+                  fontSize: '16px'
+                }}>Login as Teacher</Button>
               <Button
-              sx={{
-                backgroundColor:'#1F4068',
-                textTransform: 'none',
-                fontSize:'14px',
-              }}>Login as Recruiter</Button>
+                sx={{
+                  backgroundColor: '#1F4068',
+                  textTransform: 'none',
+                  fontSize: '16px',
+                }}>Login as Recruiter</Button>
             </ButtonGroup>
             <Typography
               variant="h5"
@@ -74,7 +80,7 @@ const login = () => {
               size="small"
               type="email"
               placeholder="Enter your email"
-              sx={{ width: 300, }}
+              sx={{ width: 350, }}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
@@ -89,7 +95,7 @@ const login = () => {
               type="password"
               placeholder="Enter your password"
               margin="normal"
-              sx={{ width: 300 }}
+              sx={{ width: 350 }}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
@@ -101,7 +107,7 @@ const login = () => {
             <Button
               variant="contained"
               sx={{
-                marginTop: 2,
+                marginTop: 5,
                 borderRadius: 5,
                 width: 100,
                 textTransform: 'none',
