@@ -208,6 +208,12 @@ const signup = () => {
             <Button
               variant="contained"
               component="label"
+              sx={{
+                width: 350,
+                textTransform: 'none',
+                marginTop: 2,
+                backgroundColor: '#1F4068'
+              }}
             >
               Upload File
               <input
@@ -229,7 +235,7 @@ const signup = () => {
               }}>
               Login
             </Button>
-            <Divider orientation="vertical" variant="middle" flexItem />
+            {/* <Divider orientation="vertical" variant="middle" flexItem /> */}
           </Box>
         </Box>
       </form>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../component/Login/login'
+import Login from '../component/login'
 
 const recruiter = () => {
   return (

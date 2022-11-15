@@ -2,7 +2,8 @@ import "./App.css";
 import React from 'react';
 import {BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
 import './App.css';
-import  Login from './component/Login/login'
+import  Login from './component/login'
+import RecHome from './pages/RecHome'
 import Student from './pages/student'
 import Teacher from './pages/teacher'
 import Recruiter from './pages/recruiter'
@@ -19,6 +20,7 @@ function App() {
           <Route path="teacher/" element={<Teacher/>}/>
           <Route path="/recruiter" element={<Recruiter/>}/>
           <Route path="/signup" element={<Signup/>}/>
+          <Route path="/rechome" element={<RecHome/>}/>
         </Routes>
       </Router>
     </div>

@@ -34,9 +34,9 @@ const login = () => {
               position: 'cover',
             }}>
               
-              <img 
+              {/* <img 
               src="https://res.cloudinary.com/db2avaxdx/image/upload/v1667304122/remove_background_acmnri.png" alt="logo"
-              />
+              /> */}
               
             <Typography
               variant="h5"
