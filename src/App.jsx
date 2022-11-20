@@ -9,10 +9,10 @@ import Teacher from './pages/teacher'
 import Recruiter from './pages/recruiter'
 import Signup from "./pages/Signup/signup";
 
+
 function App() {
   return (
     <div>
-      
       <Router>
         <Routes>
           <Route path="/" element={<Login/>}/>
@@ -20,7 +20,7 @@ function App() {
           <Route path="teacher/" element={<Teacher/>}/>
           <Route path="/recruiter" element={<Recruiter/>}/>
           <Route path="/signup" element={<Signup/>}/>
-          <Route path="/rechome" element={<RecHome/>}/>
+          <Route path="/home/recruiter" element={<RecHome/>}/>
         </Routes>
       </Router>
     </div>
